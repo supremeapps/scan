@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eou-ZP-i7y">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,24 @@
             <objects>
                 <viewController storyboardIdentifier="IntroViewController" id="eou-ZP-i7y" customClass="IntroViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMV-dd-Awz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efb-uv-Ylq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <connections>
                                     <outlet property="delegate" destination="eou-ZP-i7y" id="Fam-fq-Eco"/>
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8aM-UE-NZL">
-                                <rect key="frame" x="168" y="602" width="39" height="37"/>
+                                <rect key="frame" x="140.5" y="415" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="gVe-9a-x8A"/>
                                     <constraint firstAttribute="height" constant="37" id="jSh-SQ-aAC"/>
                                 </constraints>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-J3-c2k">
-                                <rect key="frame" x="75" y="538" width="224" height="60"/>
+                                <rect key="frame" x="48" y="351" width="224" height="60"/>
                                 <color key="backgroundColor" red="0.28017817183134319" green="1" blue="0.97347978740720897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="LLH-Ha-aoY"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,19 +13,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_1" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-17-iug">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0b-8J-Fra">
-                    <rect key="frame" x="67" y="35" width="241" height="72"/>
+                    <rect key="frame" x="39.5" y="35" width="241" height="72"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="72" id="JWN-l4-59m"/>
                         <constraint firstAttribute="width" constant="241" id="KUi-Ic-C76"/>
                     </constraints>
-                    <string key="text">Have a lot papers to scan?</string>
+                    <string key="text">Have a lot papers
+ to scan?</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -44,19 +45,20 @@
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
         <view contentMode="scaleToFill" id="iGh-9z-BH3">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="into_2" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-rX-Phg">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="into_2" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-rX-Phg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-t9-tbD">
-                    <rect key="frame" x="67" y="35" width="241" height="72"/>
+                    <rect key="frame" x="39.5" y="35" width="241" height="72"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="241" id="OW6-6V-A5M"/>
                         <constraint firstAttribute="height" constant="72" id="yI5-RO-gKx"/>
                     </constraints>
-                    <string key="text">Get scans in seconds</string>
+                    <string key="text">Get scans
+ in seconds</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
