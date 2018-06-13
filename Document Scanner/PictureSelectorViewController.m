@@ -1,5 +1,8 @@
 #import "PictureSelectorViewController.h"
 #import "ProcessViewController.h"
+#import "UserEventsManager.h"
+#import "SubscriptionViewController.h"
+#import "InAppManager.h"
 
 @interface PictureSelectorViewController ()
 
@@ -17,7 +20,40 @@
     [self initializePhotoPicker];
     [self initializeHeaderView];
     [self initializeFooterView];
+    UserEventsManager.manager.event = ^{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"You have reached your daily limit of scanning" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleDefault handler:nil]];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Upgrade" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            SubscriptionViewController *vc = [[UIStoryboard storyboardWithName:@"Subcription" bundle:nil] instantiateInitialViewController];
+            
+            __weak typeof(vc) weakVC = vc;
+            vc.subscriptionCompletion = ^{
+                __strong typeof(weakVC) strongVC = weakVC;
+                [strongVC dismissViewControllerAnimated:true completion:^{
+                    [self rate];
+                }];
+            };
+            [self presentViewController:vc animated:true completion:nil];
+        }]];
+        [self presentViewController:alert animated:true completion:nil];
+    };
+}
 
+- (void)rate {
+    BOOL requested = [NSUserDefaults.standardUserDefaults boolForKey:@"kAppLiked"];
+    if (!requested) {
+        if (@available(iOS 10.3, *)) {
+            [SKStoreReviewController requestReview];
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Do you like our app?" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            [alert addAction:[UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleDefault handler:nil]];
+            [alert addAction:[UIAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                NSURL *url = [NSURL URLWithString:@"itms-apps://itunes.apple.com/app/viewContentsUserReviews?id=1397354115"];
+                [UIApplication.sharedApplication openURL:url options:@{} completionHandler:nil];
+            }]];
+        }
+        [NSUserDefaults.standardUserDefaults setBool:YES forKey:@"kAppLiked"];
+    }
 }
 
 
@@ -59,6 +95,20 @@
 {
     [super viewDidAppear:animated];
     [self.cameraViewController start];
+    if (![InAppManager userHasPurchasedItem]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            SubscriptionViewController *vc = [[UIStoryboard storyboardWithName:@"Subcription" bundle:nil] instantiateInitialViewController];
+            __weak typeof(vc) weakVC = vc;
+            vc.subscriptionCompletion = ^{
+                __strong typeof(weakVC) strongVC = weakVC;
+                [strongVC dismissViewControllerAnimated:true completion:^{
+                    [self rate];
+                }];
+            };
+            [self presentViewController:vc animated:true completion:nil];
+        });
+    }
 }
 
 -(void)viewDidDisappear:(BOOL)animated
@@ -218,22 +268,25 @@
 
 -(void)selectFromCameraRollClicked{
     
+    if (![UserEventsManager.manager logEvent]) {
+        return;
+    }
+    
     [self presentViewController:self.picker animated:YES completion:^{
-       
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }];
     
 }
 
 -(void)captureImageClicked{
+    if (![UserEventsManager.manager logEvent]) {
+        return;
+    }
     
     [self.cameraViewController captureImageWithCompletionHander:^(id data) {
-        
         UIImage *image = ([data isKindOfClass:[NSData class]]) ? [UIImage imageWithData:data] : data;
-        
         CGImageRef imgRefCrop = image.CGImage;
         UIImage *photo = [UIImage imageWithCGImage:imgRefCrop scale:image.scale orientation:UIImageOrientationUp];
-
         [self imageSelected:photo];
     }];
 }
@@ -315,45 +368,24 @@
 
     NSLog(@"Check point 123 : %@",NSStringFromCGSize(selectedImage.size));
     [picker dismissViewControllerAnimated:YES completion:^{
-        
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         [self imageSelected:selectedImage];
     }];
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [picker dismissViewControllerAnimated:YES completion:^{
-        
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-
-- (BOOL)shouldAutorotate
-{
-    
+- (BOOL)shouldAutorotate {
     return YES;
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -3,10 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B6999C69CAE08AFBBBF6EA /* libPods-Simple Scan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5B080805FAF9AB5C1DD1DD /* libPods-Simple Scan.a */; };
+		303C5C4C20D14B3C00E3D64F /* Subcription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303C5C4B20D14B3C00E3D64F /* Subcription.storyboard */; };
+		303C5C4F20D14B4C00E3D64F /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C5C4E20D14B4C00E3D64F /* SubscriptionViewController.m */; };
+		303C5C5720D1698A00E3D64F /* UserEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C5C5520D1698A00E3D64F /* UserEventsManager.m */; };
+		303C5C5920D16F9D00E3D64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 303C5C5820D16F9D00E3D64F /* GoogleService-Info.plist */; };
+		305A8CC420D145A7005B1286 /* IntroControllers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305A8CC320D145A7005B1286 /* IntroControllers.xib */; };
+		30B96FEE20CFDA5100B6C455 /* PaidSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B96FE420CFDA5100B6C455 /* PaidSubscription.m */; };
+		30B96FEF20CFDA5100B6C455 /* InAppSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B96FE520CFDA5100B6C455 /* InAppSession.m */; };
+		30B96FF020CFDA5100B6C455 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B96FE720CFDA5100B6C455 /* TermsViewController.m */; };
+		30B96FF120CFDA5100B6C455 /* InAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B96FED20CFDA5100B6C455 /* InAppManager.m */; };
+		30B96FF320CFDB9400B6C455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B96FF220CFDB9400B6C455 /* Launch Screen.storyboard */; };
+		30B96FF720CFDD2E00B6C455 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B96FF620CFDD2E00B6C455 /* IntroViewController.m */; };
+		30B96FF920CFDD5600B6C455 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B96FF820CFDD5600B6C455 /* Intro.storyboard */; };
 		4005099A1D530A0F00B7895E /* CropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400509991D530A0F00B7895E /* CropViewController.m */; };
 		4005099D1D530A1D00B7895E /* ProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4005099C1D530A1D00B7895E /* ProcessViewController.m */; };
 		400509A01D530A3100B7895E /* CDZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4005099F1D530A3100B7895E /* CDZoomView.m */; };
@@ -42,6 +55,26 @@
 
 /* Begin PBXFileReference section */
 		2C1B24011F34762B009BAA88 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		303C5C4B20D14B3C00E3D64F /* Subcription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subcription.storyboard; sourceTree = "<group>"; };
+		303C5C4D20D14B4C00E3D64F /* SubscriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionViewController.h; sourceTree = "<group>"; };
+		303C5C4E20D14B4C00E3D64F /* SubscriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptionViewController.m; sourceTree = "<group>"; };
+		303C5C5520D1698A00E3D64F /* UserEventsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEventsManager.m; sourceTree = "<group>"; };
+		303C5C5620D1698A00E3D64F /* UserEventsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEventsManager.h; sourceTree = "<group>"; };
+		303C5C5820D16F9D00E3D64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		305A8CC320D145A7005B1286 /* IntroControllers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroControllers.xib; sourceTree = "<group>"; };
+		30B96FE420CFDA5100B6C455 /* PaidSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidSubscription.m; sourceTree = "<group>"; };
+		30B96FE520CFDA5100B6C455 /* InAppSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSession.m; sourceTree = "<group>"; };
+		30B96FE720CFDA5100B6C455 /* TermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewController.m; sourceTree = "<group>"; };
+		30B96FE820CFDA5100B6C455 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
+		30B96FE920CFDA5100B6C455 /* InAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppManager.h; sourceTree = "<group>"; };
+		30B96FEB20CFDA5100B6C455 /* PaidSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidSubscription.h; sourceTree = "<group>"; };
+		30B96FEC20CFDA5100B6C455 /* InAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSession.h; sourceTree = "<group>"; };
+		30B96FED20CFDA5100B6C455 /* InAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppManager.m; sourceTree = "<group>"; };
+		30B96FF220CFDB9400B6C455 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		30B96FF520CFDD2E00B6C455 /* IntroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		30B96FF620CFDD2E00B6C455 /* IntroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		30B96FF820CFDD5600B6C455 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		34111FFBF53256714459CC1D /* Pods-Simple Scan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Scan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Scan/Pods-Simple Scan.release.xcconfig"; sourceTree = "<group>"; };
 		400509981D530A0F00B7895E /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
 		400509991D530A0F00B7895E /* CropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropViewController.m; sourceTree = "<group>"; };
 		4005099B1D530A1D00B7895E /* ProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessViewController.h; sourceTree = "<group>"; };
@@ -56,6 +89,7 @@
 		400509A81D530A5A00B7895E /* CDImageRectangleDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDImageRectangleDetector.m; sourceTree = "<group>"; };
 		400509AA1D530A6800B7895E /* CDCameraOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCameraOverlayView.h; sourceTree = "<group>"; };
 		400509AB1D530A6800B7895E /* CDCameraOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCameraOverlayView.m; sourceTree = "<group>"; };
+		645D8A09C290102A185360AF /* Pods-Simple Scan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Scan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Scan/Pods-Simple Scan.debug.xcconfig"; sourceTree = "<group>"; };
 		649C41281B40DC4100DB3A53 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		649C41291B40DC4100DB3A53 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 		64D2969C1B3CEAF7004CE3D6 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -82,6 +116,7 @@
 		64DF26751B393498009D0F8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		64DF26771B393B3C009D0F8B /* FlashButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashButton.h; sourceTree = "<group>"; };
 		64DF26781B393B3C009D0F8B /* FlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashButton.m; sourceTree = "<group>"; };
+		FC5B080805FAF9AB5C1DD1DD /* libPods-Simple Scan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Scan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +127,7 @@
 				64D296A61B3D1A9F004CE3D6 /* MessageUI.framework in Frameworks */,
 				64D296A41B3D1850004CE3D6 /* Social.framework in Frameworks */,
 				64DF26761B393498009D0F8B /* AssetsLibrary.framework in Frameworks */,
+				27B6999C69CAE08AFBBBF6EA /* libPods-Simple Scan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +141,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160FA1EBFC9301169D5753E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC5B080805FAF9AB5C1DD1DD /* libPods-Simple Scan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		303C5C5420D1698A00E3D64F /* UserEvents */ = {
+			isa = PBXGroup;
+			children = (
+				303C5C5520D1698A00E3D64F /* UserEventsManager.m */,
+				303C5C5620D1698A00E3D64F /* UserEventsManager.h */,
+			);
+			name = UserEvents;
+			path = Modules/UserEvents;
+			sourceTree = "<group>";
+		};
+		305A8CC220D1458C005B1286 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				305A8CC320D145A7005B1286 /* IntroControllers.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		305A8CC520D14AF5005B1286 /* Subcribe */ = {
+			isa = PBXGroup;
+			children = (
+				303C5C4B20D14B3C00E3D64F /* Subcription.storyboard */,
+				303C5C4D20D14B4C00E3D64F /* SubscriptionViewController.h */,
+				303C5C4E20D14B4C00E3D64F /* SubscriptionViewController.m */,
+			);
+			path = Subcribe;
+			sourceTree = "<group>";
+		};
+		30B96FE320CFDA5100B6C455 /* InApp */ = {
+			isa = PBXGroup;
+			children = (
+				30B96FE620CFDA5100B6C455 /* Terms */,
+				30B96FEB20CFDA5100B6C455 /* PaidSubscription.h */,
+				30B96FE420CFDA5100B6C455 /* PaidSubscription.m */,
+				30B96FEC20CFDA5100B6C455 /* InAppSession.h */,
+				30B96FE520CFDA5100B6C455 /* InAppSession.m */,
+				30B96FE920CFDA5100B6C455 /* InAppManager.h */,
+				30B96FED20CFDA5100B6C455 /* InAppManager.m */,
+			);
+			name = InApp;
+			path = Modules/InApp;
+			sourceTree = "<group>";
+		};
+		30B96FE620CFDA5100B6C455 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				30B96FE720CFDA5100B6C455 /* TermsViewController.m */,
+				30B96FE820CFDA5100B6C455 /* TermsViewController.h */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		30B96FF420CFDCE800B6C455 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				305A8CC220D1458C005B1286 /* Controllers */,
+				30B96FF520CFDD2E00B6C455 /* IntroViewController.h */,
+				30B96FF620CFDD2E00B6C455 /* IntroViewController.m */,
+				30B96FF820CFDD5600B6C455 /* Intro.storyboard */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		30EF788720CFD92200F8FCA1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				303C5C5420D1698A00E3D64F /* UserEvents */,
+				305A8CC520D14AF5005B1286 /* Subcribe */,
+				30B96FF420CFDCE800B6C455 /* Intro */,
+				30B96FE320CFDA5100B6C455 /* InApp */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
 		6403DB801B78419A00B16A60 /* Magnetic zoomer */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +288,8 @@
 				64DF262D1B393467009D0F8B /* Document Scanner */,
 				64DF26471B393467009D0F8B /* Document ScannerTests */,
 				64DF262C1B393467009D0F8B /* Products */,
+				AC083758818826E90B2C1FD0 /* Pods */,
+				160FA1EBFC9301169D5753E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,9 +305,11 @@
 		64DF262D1B393467009D0F8B /* Document Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				30EF788720CFD92200F8FCA1 /* Modules */,
 				2C1B24011F34762B009BAA88 /* Firebase.h */,
 				64DF26321B393467009D0F8B /* AppDelegate.h */,
 				64DF26331B393467009D0F8B /* AppDelegate.m */,
+				303C5C5820D16F9D00E3D64F /* GoogleService-Info.plist */,
 				64FE9E2A1B3A92F200707802 /* Constant values */,
 				64FE9E291B3A92E700707802 /* View controllers */,
 				64FE9E281B3A92D100707802 /* Custom view */,
@@ -203,6 +325,7 @@
 			children = (
 				64DF262F1B393467009D0F8B /* Info.plist */,
 				64DF26301B393467009D0F8B /* main.m */,
+				30B96FF220CFDB9400B6C455 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -296,6 +419,15 @@
 			name = "Process View";
 			sourceTree = "<group>";
 		};
+		AC083758818826E90B2C1FD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				645D8A09C290102A185360AF /* Pods-Simple Scan.debug.xcconfig */,
+				34111FFBF53256714459CC1D /* Pods-Simple Scan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,9 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DF264E1B393467009D0F8B /* Build configuration list for PBXNativeTarget "Simple Scan" */;
 			buildPhases = (
+				EE932A68D252C32CA68C1B9F /* [CP] Check Pods Manifest.lock */,
 				64DF26271B393467009D0F8B /* Sources */,
 				64DF26281B393467009D0F8B /* Frameworks */,
 				64DF26291B393467009D0F8B /* Resources */,
+				329B487A8C16F4CF07940DD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,7 +479,6 @@
 				TargetAttributes = {
 					64DF262A1B393467009D0F8B = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 2A4337Q77X;
 					};
 					64DF26431B393467009D0F8B = {
 						CreatedOnToolsVersion = 6.3;
@@ -354,7 +487,7 @@
 				};
 			};
 			buildConfigurationList = 64DF26261B393467009D0F8B /* Build configuration list for PBXProject "Document Scanner" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -377,7 +510,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B96FF320CFDB9400B6C455 /* Launch Screen.storyboard in Resources */,
 				64DF263C1B393467009D0F8B /* Images.xcassets in Resources */,
+				305A8CC420D145A7005B1286 /* IntroControllers.xib in Resources */,
+				30B96FF920CFDD5600B6C455 /* Intro.storyboard in Resources */,
+				303C5C4C20D14B3C00E3D64F /* Subcription.storyboard in Resources */,
+				303C5C5920D16F9D00E3D64F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +527,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329B487A8C16F4CF07940DD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Simple Scan/Pods-Simple Scan-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simple Scan/Pods-Simple Scan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE932A68D252C32CA68C1B9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple Scan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64DF26271B393467009D0F8B /* Sources */ = {
@@ -403,14 +580,21 @@
 				64D296A21B3D0FC4004CE3D6 /* ShareObject.m in Sources */,
 				649C412A1B40DC4100DB3A53 /* CustomNavigationController.m in Sources */,
 				64DF26341B393467009D0F8B /* AppDelegate.m in Sources */,
+				30B96FF120CFDA5100B6C455 /* InAppManager.m in Sources */,
+				30B96FF020CFDA5100B6C455 /* TermsViewController.m in Sources */,
 				64DF26691B393480009D0F8B /* SelectableRoundView.m in Sources */,
 				64DF26311B393467009D0F8B /* main.m in Sources */,
 				64DF26791B393B3C009D0F8B /* FlashButton.m in Sources */,
+				30B96FF720CFDD2E00B6C455 /* IntroViewController.m in Sources */,
 				64DF26641B393480009D0F8B /* CropperConstantValues.m in Sources */,
+				303C5C4F20D14B4C00E3D64F /* SubscriptionViewController.m in Sources */,
 				64D2969E1B3CEAF7004CE3D6 /* ShareViewController.m in Sources */,
+				303C5C5720D1698A00E3D64F /* UserEventsManager.m in Sources */,
 				400509AC1D530A6800B7895E /* CDCameraOverlayView.m in Sources */,
 				400509A91D530A5A00B7895E /* CDImageRectangleDetector.m in Sources */,
+				30B96FEF20CFDA5100B6C455 /* InAppSession.m in Sources */,
 				400509A01D530A3100B7895E /* CDZoomView.m in Sources */,
+				30B96FEE20CFDA5100B6C455 /* PaidSubscription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,40 +702,51 @@
 		};
 		64DF264F1B393467009D0F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645D8A09C290102A185360AF /* Pods-Simple Scan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2A4337Q77X;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5LH59QUK5S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Document Scanner/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = docscanrus.ivan.koval.com;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supreme.scanner.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f540051d-dbbb-4a20-8e16-b225f2033764";
+				PROVISIONING_PROFILE_SPECIFIER = 11jun_and.scannerfree.profile;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		64DF26501B393467009D0F8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34111FFBF53256714459CC1D /* Pods-Simple Scan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2A4337Q77X;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Document Scanner/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = docscanrus.ivan.koval.com;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supreme.scanner.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -569,7 +764,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Document ScannerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codesign.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Document Scanner.app/Document Scanner";
@@ -585,7 +784,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Document ScannerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codesign.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Document Scanner.app/Document Scanner";

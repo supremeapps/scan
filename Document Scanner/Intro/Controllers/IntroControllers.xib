@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_1" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-17-iug">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0b-8J-Fra">
+                    <rect key="frame" x="67" y="35" width="241" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="JWN-l4-59m"/>
+                        <constraint firstAttribute="width" constant="241" id="KUi-Ic-C76"/>
+                    </constraints>
+                    <string key="text">Have a lot papers to scan?</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m0b-8J-Fra" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="JyA-oQ-h6p"/>
+                <constraint firstItem="aSz-17-iug" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nf6-Wb-SAu"/>
+                <constraint firstItem="aSz-17-iug" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Xej-Al-SB0"/>
+                <constraint firstItem="aSz-17-iug" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="jTD-6S-f9l"/>
+                <constraint firstItem="m0b-8J-Fra" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pmx-Ws-XjR"/>
+                <constraint firstItem="aSz-17-iug" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zEm-L9-U1a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="iGh-9z-BH3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="into_2" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-rX-Phg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-t9-tbD">
+                    <rect key="frame" x="67" y="35" width="241" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="241" id="OW6-6V-A5M"/>
+                        <constraint firstAttribute="height" constant="72" id="yI5-RO-gKx"/>
+                    </constraints>
+                    <string key="text">Get scans in seconds</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0oQ-rX-Phg" firstAttribute="top" secondItem="iGh-9z-BH3" secondAttribute="top" id="BKP-yY-qNW"/>
+                <constraint firstItem="0oQ-rX-Phg" firstAttribute="leading" secondItem="t8Y-Dx-FOp" secondAttribute="leading" id="KRY-cW-Oai"/>
+                <constraint firstItem="0oQ-rX-Phg" firstAttribute="bottom" secondItem="t8Y-Dx-FOp" secondAttribute="bottom" id="Tsu-Dd-qDT"/>
+                <constraint firstItem="EHJ-t9-tbD" firstAttribute="centerX" secondItem="iGh-9z-BH3" secondAttribute="centerX" id="Ymb-rU-oQg"/>
+                <constraint firstItem="EHJ-t9-tbD" firstAttribute="top" secondItem="t8Y-Dx-FOp" secondAttribute="top" constant="15" id="llh-s9-RBe"/>
+                <constraint firstItem="0oQ-rX-Phg" firstAttribute="trailing" secondItem="t8Y-Dx-FOp" secondAttribute="trailing" id="s0t-m6-CbX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="t8Y-Dx-FOp"/>
+            <point key="canvasLocation" x="490.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="into_2" width="750" height="1334"/>
+        <image name="intro_1" width="750" height="1334"/>
+    </resources>
+</document>

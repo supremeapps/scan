@@ -28,6 +28,8 @@
 	<string>We need use for get image from camera usage.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We need use for get image from photo library.</string>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

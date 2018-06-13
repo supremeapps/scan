@@ -1,6 +1,9 @@
 #import "AppDelegate.h"
 #import "PictureSelectorViewController.h"
 #import "CustomNavigationController.h"
+#import "InAppManager.h"
+
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -15,12 +18,21 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [FIRApp configure];
     
-    PictureSelectorViewController* picVC = [[PictureSelectorViewController alloc] initWithNibName:nil bundle:nil];
-    CustomNavigationController* navController = [[CustomNavigationController alloc] initWithRootViewController:picVC];
-
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = navController;
+    [InAppManager userHasPurchasedItems:false completion:nil];
+    if ([NSUserDefaults.standardUserDefaults boolForKey:@"AppInstalled"] == false) {
+        [NSUserDefaults.standardUserDefaults setObject:@YES forKey:@"AppInstalled"];
+        UIViewController* introVC = [[UIStoryboard storyboardWithName:@"Intro" bundle:nil] instantiateInitialViewController];
+        self.window.rootViewController = introVC;
+        [self.window makeKeyAndVisible];
+    } else {
+        PictureSelectorViewController* picVC = [[PictureSelectorViewController alloc] initWithNibName:nil bundle:nil];
+        CustomNavigationController* navController = [[CustomNavigationController alloc] initWithRootViewController:picVC];
+        
+        [self.window makeKeyAndVisible];
+        self.window.rootViewController = navController;
+    }
     
     // Override point for customization after application launch.
     return YES;
