@@ -4,4 +4,5 @@
 target 'Simple Scan' do
     pod 'Firebase'
     pod 'SVProgressHUD'
+    pod 'FBSDKCoreKit'
 end

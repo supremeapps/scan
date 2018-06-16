@@ -2,6 +2,7 @@
 #import "PictureSelectorViewController.h"
 #import "CustomNavigationController.h"
 #import "InAppManager.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @import Firebase;
 
@@ -19,6 +20,7 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [FIRApp configure];
+    [FBSDKAppEvents activateApp];
     
     [InAppManager userHasPurchasedItems:false completion:nil];
     if ([NSUserDefaults.standardUserDefaults boolForKey:@"AppInstalled"] == false) {

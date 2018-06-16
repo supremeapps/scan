@@ -1,4 +1,12 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.33.0):
+    - Bolts (~> 1.7)
   - Firebase (5.0.1):
     - Firebase/Core (= 5.0.1)
   - Firebase/Core (5.0.1):
@@ -26,11 +34,14 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - FBSDKCoreKit
   - Firebase
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Bolts
+    - FBSDKCoreKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -40,6 +51,8 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
   FirebaseAnalytics: 19812b49fa5f283dd6b23edf8a14b5d477029ab8
   FirebaseCore: cafc814b2d84fc8733f09e653041cc2165332ad7
@@ -48,6 +61,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: abb517bce4f62474899f86189bf82e920165e04f
+PODFILE CHECKSUM: 4148f55b4d34a0a3a2abed970202ffdb47d83f29
 
 COCOAPODS: 1.5.0
