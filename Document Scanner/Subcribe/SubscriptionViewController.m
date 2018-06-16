@@ -99,6 +99,9 @@
             }];
         }
     }];
+    InAppManager.shared.restoreCompletion = ^{
+        [SVProgressHUD dismiss];
+    };
 }
 
 

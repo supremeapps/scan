@@ -3,6 +3,7 @@
 #import "CustomNavigationController.h"
 #import "InAppManager.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <SVProgressHUD.h>
 
 @import Firebase;
 
@@ -22,6 +23,7 @@
     [FIRApp configure];
     [FBSDKAppEvents activateApp];
     
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [InAppManager userHasPurchasedItems:false completion:nil];
     if ([NSUserDefaults.standardUserDefaults boolForKey:@"AppInstalled"] == false) {
         [NSUserDefaults.standardUserDefaults setObject:@YES forKey:@"AppInstalled"];
